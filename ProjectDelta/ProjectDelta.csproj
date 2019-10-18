@@ -5,9 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="WebApp\**" />
     <Compile Remove="wwwroot\**" />
+    <Content Remove="WebApp\**" />
     <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="WebApp\**" />
     <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="WebApp\**" />
     <None Remove="wwwroot\**" />
   </ItemGroup>
 

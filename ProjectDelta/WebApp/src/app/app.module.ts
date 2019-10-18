@@ -6,11 +6,13 @@ import {RouterModule} from '@angular/router';
 import {APP_BASE_HREF, CommonModule} from '@angular/common';
 import {AppRoutingModule} from './app-routing.module';
 import {HomePageComponent} from './pages/home-page/home-page.component';
+import { ApplicationsPageComponent } from './pages/applications-page/applications-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent
+    HomePageComponent,
+    ApplicationsPageComponent
   ],
   imports: [
     BrowserModule,
