@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using ProjectDelta.Logic;
+using ProjectDelta.Types;
 
 namespace ProjectDelta.Controllers
 {
@@ -8,14 +10,13 @@ namespace ProjectDelta.Controllers
     public class ApplicationController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<List<Application>> GetAppList()
+        public ActionResult<ApplicationList> GetAppList()
         {
-            var applicationList = new List<Application>();
+            var jsonReader = new JsonReader();
 
-            applicationList.Add(new Application
-            {
-                Name = "ConfigManager"
-            });
+            var applicationList = new ApplicationList();
+
+            applicationList = jsonReader.GetApplicationList();
 
             return applicationList;
         }

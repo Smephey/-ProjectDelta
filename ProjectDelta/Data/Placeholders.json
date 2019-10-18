@@ -1,0 +1,12 @@
+{
+  "Applications": [
+    {
+      "Name": "Meehow",
+      "Description": "the frontendy boi"
+    },
+    {
+      "Name": "Connor",
+      "Description": "the backendy boi"
+    }
+  ]
+}
