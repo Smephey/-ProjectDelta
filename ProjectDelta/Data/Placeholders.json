@@ -1,12 +1,28 @@
 {
   "Applications": [
     {
-      "Name": "Meehow",
-      "Description": "the frontendy boi"
+      "Name": "GiveMeTheBiggestBaconYouGot",
+      "Description": "Spicy jalapeno bacon ipsum dolor amet ham hock picanha burgdoggen tail buffalo, turducken jerky hamburger swine pork chop doner biltong."
     },
     {
-      "Name": "Connor",
-      "Description": "the backendy boi"
+      "Name": "Give me the bacon",
+      "Description": "Spicy jalapeno bacon ipsum dolor amet ham hock picanha burgdoggen tail buffalo, turducken jerky hamburger swine pork chop doner biltong."
+    },
+    {
+      "Name": "GiveMeTheBiggestBaconYouGot",
+      "Description": "Spicy jalapeno bacon ipsum dolor amet ham hock picanha burgdoggen tail buffalo, turducken jerky hamburger swine pork chop doner biltong."
+    },
+    {
+      "Name": "Some of the bacon please",
+      "Description": "Spicy jalapeno bacon ipsum dolor amet ham hock picanha burgdoggen tail buffalo, turducken jerky hamburger swine pork chop doner biltong."
+    },
+    {
+      "Name": "GIVEMETHEBACON",
+      "Description": "Spicy jalapeno bacon ipsum dolor amet ham hock picanha burgdoggen tail buffalo, turducken jerky hamburger swine pork chop doner biltong."
+    },
+    {
+      "Name": "Meehow is bacon",
+      "Description": "Spicy jalapeno bacon ipsum dolor amet ham hock picanha burgdoggen tail buffalo, turducken jerky hamburger swine pork chop doner biltong."
     }
   ]
 }
