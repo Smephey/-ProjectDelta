@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 using ProjectDelta.Types;
-using System.Collections.Generic;
+using ProjectDelta.Types.JsonObjects;
 using System.IO;
 using System.Reflection;
 
@@ -10,13 +10,20 @@ namespace ProjectDelta.Logic
     {
         public ApplicationList GetApplicationList()
         {
-            var applications = new ApplicationList();
-            using (StreamReader reader = new StreamReader(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Data/Placeholders.Json")))
+            return JsonConvert.DeserializeObject<ApplicationList>(ReadJsonFile("Placeholders"));
+        }
+
+        public CommandList GetCommandList()
+        {
+            return JsonConvert.DeserializeObject<CommandList>(ReadJsonFile("Commands"));
+        }
+
+        private string ReadJsonFile(string fileName)
+        {
+            using (StreamReader reader = new StreamReader(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), $"Data//{fileName}.Json")))
             {
-                var json = reader.ReadToEnd();
-                applications = JsonConvert.DeserializeObject<ApplicationList>(json);
+                return reader.ReadToEnd();
             }
-            return applications;
         }
     }
 }

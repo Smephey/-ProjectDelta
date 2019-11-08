@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using ProjectDelta.Logic;
 using ProjectDelta.Types;
 
@@ -13,11 +13,7 @@ namespace ProjectDelta.Controllers
         {
             var jsonReader = new JsonReader();
 
-            var applicationList = new ApplicationList();
-
-            applicationList = jsonReader.GetApplicationList();
-
-            return applicationList;
+            return jsonReader.GetApplicationList();
         }
     }
 }
