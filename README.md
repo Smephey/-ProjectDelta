@@ -1,2 +1,3 @@
 # -ProjectDelta
-Don't need to add one, do we? We know what it's gonna do.
+A project which is going to be used as a kind of "dictionary" so that should a newbie developer need something technical then they can look it up.
+
