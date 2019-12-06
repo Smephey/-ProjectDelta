@@ -11,6 +11,6 @@ export class ApplicationRepository {
   }
 
   getTest(): Observable<any> {
-    return this.httpClient.get('localhost:/53132/api/applications');
+        return this.httpClient.get('http://localhost:/53132/api/applications');
   }
 }
