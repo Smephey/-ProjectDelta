@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace ProjectDelta.Types
+﻿namespace ProjectDelta.Types
 {
     public class Application
     {
