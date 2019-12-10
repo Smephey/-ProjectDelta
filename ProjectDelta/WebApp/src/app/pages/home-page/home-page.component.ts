@@ -8,14 +8,18 @@ import {ApplicationService} from '../../services/application.service';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor(private applicationService: ApplicationService) {
+  public testData: Array<any>;
+  private _applicationService: ApplicationService;
+
+  constructor(applicationService: ApplicationService) {
+    this._applicationService = applicationService;
   }
 
 
   ngOnInit(): void {
-    this.applicationService.getTest()
+    this._applicationService.getTest()
       .subscribe((test) => {
-        console.log(test);
+        this.testData = test;
       });
   }
 
