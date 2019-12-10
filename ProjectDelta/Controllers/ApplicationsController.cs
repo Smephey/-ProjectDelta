@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Cors;
+﻿using System.Collections.Generic;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using ProjectDelta.Logic;
 using ProjectDelta.Types;
@@ -11,7 +12,7 @@ namespace ProjectDelta.Controllers
     public class ApplicationController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<ApplicationList> GetAppList()
+        public ActionResult<List<Application>> GetAppList()
         {
             var jsonReader = new JsonReader();
 
