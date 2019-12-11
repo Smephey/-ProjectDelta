@@ -6,7 +6,8 @@ import {RouterModule} from '@angular/router';
 import {APP_BASE_HREF, CommonModule} from '@angular/common';
 import {AppRoutingModule} from './app-routing.module';
 import {HomePageComponent} from './pages/home-page/home-page.component';
-import { ApplicationsPageComponent } from './pages/applications-page/applications-page.component';
+import {ApplicationsPageComponent} from './pages/applications-page/applications-page.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ApplicationsPageComponent } from './pages/applications-page/application
     BrowserModule,
     RouterModule,
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [{provide: APP_BASE_HREF, useValue: '/'}],
   bootstrap: [AppComponent],
