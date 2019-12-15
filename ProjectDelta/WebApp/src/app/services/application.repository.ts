@@ -1,16 +1,17 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
+import {BACKEND_ADDRESS} from '../api-reference';
 
-@Injectable({
-    providedIn: 'root'
-})
+@Injectable()
 export class ApplicationRepository {
+    private _httpClient: HttpClient;
 
-    constructor(private httpClient: HttpClient) {
+    constructor(httpClient: HttpClient) {
+        this._httpClient = httpClient;
     }
 
     getTest(): Observable<any> {
-        return this.httpClient.get('https://localhost:44338/api/applications');
+        return this._httpClient.get(`${BACKEND_ADDRESS}/api/applications`);
     }
 }

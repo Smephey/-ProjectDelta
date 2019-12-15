@@ -8,6 +8,8 @@ import {AppRoutingModule} from './app-routing.module';
 import {HomePageComponent} from './pages/home-page/home-page.component';
 import {ApplicationsPageComponent} from './pages/applications-page/applications-page.component';
 import {HttpClientModule} from '@angular/common/http';
+import {ApplicationRepository} from './services/application.repository';
+import {ApplicationService} from './services/application.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,11 @@ import {HttpClientModule} from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [{provide: APP_BASE_HREF, useValue: '/'}],
+  providers: [
+    {provide: APP_BASE_HREF, useValue: '/'},
+    ApplicationRepository,
+    ApplicationService
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {
