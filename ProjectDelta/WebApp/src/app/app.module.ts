@@ -10,6 +10,7 @@ import {ApplicationsPageComponent} from './pages/applications-page/applications-
 import {HttpClientModule} from '@angular/common/http';
 import {ApplicationRepository} from './services/application.repository';
 import {ApplicationService} from './services/application.service';
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {ApplicationService} from './services/application.service';
     RouterModule,
     CommonModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue: '/'},
