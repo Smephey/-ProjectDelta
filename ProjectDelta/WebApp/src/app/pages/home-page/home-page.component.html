@@ -1,5 +1,5 @@
 <top-nav></top-nav>
+<h6 *ngFor="let data of testData" class="pt-3 px-3">
+    {{ data.name | titlecase}}
+</h6>
 
-<p *ngFor="let data of testData">
-    {{ data | json | titlecase}}
-</p>

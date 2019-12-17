@@ -1,4 +1,7 @@
+@import "~src/styles";
+
 .header-nav {
-  height: 64px;
   background-color: white;
+  border-bottom: $gray-400 1px solid;
+  padding: 15px 0;
 }
