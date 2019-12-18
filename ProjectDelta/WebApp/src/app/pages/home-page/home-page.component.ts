@@ -15,8 +15,7 @@ export class HomePageComponent implements OnInit {
     this._applicationService = applicationService;
   }
 
-
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this._applicationService.getTest()
       .subscribe((test) => {
         this.testData = test;
